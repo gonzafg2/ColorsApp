@@ -1,7 +1,7 @@
 .colors-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr;
   grid-gap: 1rem;
   margin: 10px;
 
@@ -29,7 +29,7 @@
     // border: 1px solid #000000;
     border-radius: 10px;
     padding: 5px;
-    height: 25vh;
+    height: 35vh;
     font-size: 1.5rem;
     font-weight: 500;
     box-shadow: -2px 4px 1px #dddddd;

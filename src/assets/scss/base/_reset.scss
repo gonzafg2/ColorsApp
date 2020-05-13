@@ -1,0 +1,13 @@
+section a{
+  text-decoration: none;
+  color: #000000;
+  transition: 300ms all;
+  &:hover,
+  &:focus{
+    text-decoration: none;
+    color: gray;
+  }
+  &:active{
+    color: steelblue;
+  }
+}
