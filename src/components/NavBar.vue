@@ -1,6 +1,6 @@
 <template>
   <b-navbar variant="faded" type="light">
-    <b-navbar-brand href="#">
+    <b-navbar-brand :href="ColorsApp">
       <img
         src="@/assets/img/logo.png"
         class="d-inline-block align-top"
@@ -12,5 +12,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      ColorsApp: "#"
+    };
+  }
+};
 </script>
