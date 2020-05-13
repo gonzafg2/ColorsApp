@@ -83,7 +83,7 @@ export default {
       .get("https://areqres.in/api/colors")
       .then(response => (this.color = response.data.data))
       .catch(error => {
-        console.log(error)
+        console.log(error);
         this.errored = true;
       })
       .finally(() => (this.loading = false));
