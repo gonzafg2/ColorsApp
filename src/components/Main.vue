@@ -3,7 +3,14 @@
     <header class="colors-grid--title">
       <h1>Colores</h1>
     </header>
+    <section v-if="errored" style="grid-column: 1 / 4" class="display-4 mt-5">
+      <p>
+        Lo sentimos, no es posible obtener la información en este momento, por
+        favor intente nuevamente mas tarde.
+      </p>
+    </section>
     <section
+      v-else
       class="colors-tag"
       v-for="col in color"
       :key="col.id"
@@ -22,12 +29,16 @@
 </template>
 
 <script>
+// Importo librería de Axios para traer datos de API como promesa.
 import axios from "axios";
 
 export default {
   data() {
     return {
-      color: null
+      color: null,
+      errored: false
+      // Pruebo con datos de arreglo propio de forma exitosa.
+      //
       // colors: [
       //   {
       //     id: 1,
@@ -69,8 +80,13 @@ export default {
   },
   mounted() {
     axios
-      .get("https://reqres.in/api/colors")
-      .then(response => (this.color = response.data.data));
+      .get("https://areqres.in/api/colors")
+      .then(response => (this.color = response.data.data))
+      .catch(error => {
+        console.log(error)
+        this.errored = true;
+      })
+      .finally(() => (this.loading = false));
   }
 };
 </script>
