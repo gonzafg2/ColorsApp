@@ -8,6 +8,9 @@
       />
       ColorsApp
     </b-navbar-brand>
+    <b-nav-nav class="ml-auto mr-5 nav-items">
+      <router-link to="/about">Sobre esta Aplicación</router-link>
+    </b-nav-nav>
   </b-navbar>
 </template>
 

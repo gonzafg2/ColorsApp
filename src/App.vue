@@ -2,10 +2,6 @@
   <div id="app">
     <NavBar></NavBar>
     <router-view />
-    <section class="colors-page mx-5">
-      <router-link to="/MainP1">Anterior</router-link>
-      <router-link to="/MainP2">Siguiente</router-link>
-    </section>
     <Footer></Footer>
   </div>
 </template>

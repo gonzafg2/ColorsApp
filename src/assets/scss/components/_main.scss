@@ -1,7 +1,7 @@
 .colors-grid{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
   grid-gap: 1rem;
   margin: 10px;
 
@@ -47,5 +47,18 @@
     &--pvalue{
       align-self: flex-end;
     }
+  }
+}
+.colors-page {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 4;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  &--site{
+    font-size: 1.45rem;
+    color: #333333;
   }
 }

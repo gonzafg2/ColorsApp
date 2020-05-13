@@ -25,6 +25,11 @@
       </div>
       <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
     </section>
+    <section class="colors-page">
+      <router-link to="/MainP1">Anterior</router-link>
+      <div class="colors-page--site">Página 2</div>
+      <router-link to="/MainP2">Siguiente</router-link>
+    </section>
   </main>
 </template>
 
