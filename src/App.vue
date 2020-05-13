@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar></NavBar>
-    <Main></Main>
+    <!-- <Main></Main> -->
     <Footer></Footer>
   </div>
 </template>
@@ -9,15 +9,14 @@
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import NavBar from "./components/NavBar.vue";
-import Main from "./components/Main.vue";
+// import Main from "./components/Main.vue";
 import Footer from "./components/Footer.vue";
 
 export default {
   name: "App",
   components: {
-    // HelloBar,
     NavBar,
-    Main,
+    // Main,
     Footer
   }
 };
