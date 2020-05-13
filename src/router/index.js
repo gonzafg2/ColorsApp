@@ -8,10 +8,6 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "/MainP1"
-  },
-  {
-    path: "/MainP1",
     name: "MainP1",
     component: MainP1
   },
