@@ -80,7 +80,7 @@ export default {
   },
   mounted() {
     axios
-      .get("https://areqres.in/api/colors")
+      .get("https://reqres.in/api/colors")
       .then(response => (this.color = response.data.data))
       .catch(error => {
         console.log(error)
