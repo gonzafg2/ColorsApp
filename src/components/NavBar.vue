@@ -3,7 +3,7 @@
     <b-navbar-brand href="#">
       <img
         src="@/assets/img/logo.png"
-        class="d-inline-block align-top w-25"
+        class="d-inline-block align-top"
         alt="Vue-JS"
       />
       ColorsApp

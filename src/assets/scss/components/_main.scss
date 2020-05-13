@@ -1,0 +1,44 @@
+.colors-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin: 10px;
+
+  &--title{
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    grid-column: 1 / 4;
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      margin-bottom: 0;
+      font-size: 2rem;
+      color: #000000;
+      line-height: 1.25;
+    }
+  }
+  .colors-tag{
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+
+    &--year{
+      align-self: start;
+    }
+    &--name-code{
+      align-self: center;
+    }
+    &--pvalue{
+      align-self: flex-end;
+    }
+  }
+}
