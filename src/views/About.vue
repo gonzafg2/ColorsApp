@@ -34,7 +34,7 @@
     text-decoration: underline;
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 767px) {
   .colors-tag-copy__copied {
     color: #000;
     box-shadow: -2px 4px 1px #fff;
@@ -47,14 +47,14 @@
   }
   .colors-page {
     grid-column: 1/2;
-    font-size: .75rem;
+    font-size: 0.75rem;
     line-height: 1.8;
   }
   .colors-page--site {
-    font-size: .8rem;
+    font-size: 0.8rem;
   }
-  .nav-items a.link-about{
-    font-size: .7rem;
+  .nav-items a.link-about {
+    font-size: 0.7rem;
   }
 }
 </style>
