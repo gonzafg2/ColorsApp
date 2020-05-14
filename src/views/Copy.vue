@@ -5,19 +5,21 @@
     </header>
     <section
       class="colors-tag-copy__copied"
-      :style="{ 'background-color': '#aaaaaa' }"
+      :style="{ 'background-color': $route.params.color }"
     >
-      <div class="colors-tag--year">color.year</div>
+      <div class="colors-tag--year">{{ $route.params.year }}</div>
       <div class="colors-tag--name-code">
         ¡Copiado!
       </div>
-      <div class="colors-tag--pvalue">color.pantone_value</div>
+      <div class="colors-tag--pvalue">{{ $route.params.pvalue }}</div>
     </section>
 
     <section class="colors-page">
-      <router-link to="/Page1">&#8592; Página 1</router-link>
-      <div class="colors-page--site">color.name - color.color</div>
-      <router-link to="/Page2">Página 2 &#8594;</router-link>
+      <router-link :to="{ name: 'MainP1' }">&#8592; Página 1</router-link>
+      <div class="colors-page--site">
+        {{ $route.params.name }}
+      </div>
+      <router-link :to="{ name: 'MainP2' }">Página 2 &#8594;</router-link>
     </section>
   </main>
 </template>
@@ -27,14 +29,13 @@ export default {
   name: "Copy",
   props: {
     id: {
-      type: String,
-      default: null
+      type: Number,
+      default: 0
     }
   },
   data() {
     return {
-      color: null,
-      errored: false
+      col: []
     };
   }
 };

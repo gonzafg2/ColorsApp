@@ -17,7 +17,18 @@
       :key="col.id"
       :style="{ 'background-color': col.color }"
     >
-      <router-link to="/ColorCopied">
+      <router-link
+        :to="{
+          name: 'Copy',
+          params: {
+            name: col.name,
+            year: col.year,
+            color: col.color,
+            pvalue: col.pantone_value
+          }
+        }"
+      >
+        <!-- <router-link to="/ColorCopied"> -->
         <div class="colors-tag--year">{{ col.year }}</div>
         <div class="colors-tag--name-code">
           <div class="colors-tag--name">{{ col.name }}</div>
@@ -27,11 +38,12 @@
         </div>
         <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
       </router-link>
+      <!-- </router-link> -->
     </section>
     <section class="colors-page">
-      <router-link to="/Page1">&#8592; Anterior</router-link>
+      <router-link :to="{ name: 'MainP1' }">&#8592; Anterior</router-link>
       <div class="colors-page--site">Página 1</div>
-      <router-link to="/Page2">Siguiente &#8594;</router-link>
+      <router-link :to="{ name: 'MainP2' }">Siguiente &#8594;</router-link>
     </section>
   </main>
 </template>

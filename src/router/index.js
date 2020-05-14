@@ -9,31 +9,35 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "Page1"
+    redirect: "color"
   },
   {
-    path: "/Page1",
+    path: "/color",
     name: "MainP1",
-    component: () => import("../views/MainP1.vue")
+    component: () =>
+      import(/* webpackChunkName: "bundle-colors" */ "../views/MainP1.vue")
     // component: MainP1
   },
   {
-    path: "/Page2",
+    path: "/color",
     name: "MainP2",
-    component: () => import("../views/MainP2.vue")
+    component: () =>
+      import(/* webpackChunkName: "bundle-colors" */ "../views/MainP2.vue")
     // component: MainP2
   },
   {
-    path: "/ColorCopied/:color",
+    path: "/color/:name",
     name: "Copy",
-    component: () => import("../views/Copy.vue"),
+    props: true,
+    component: () =>
+      import(/* webpackChunkName: "bundle-colors" */ "../views/Copy.vue")
     // component: Copy,
-    props: true
   },
   {
     path: "/about",
     name: "About",
-    component: () => import("../views/About.vue")
+    component: () =>
+      import(/* webpackChunkName: "bundle-about" */ "../views/About.vue")
   }
 ];
 
