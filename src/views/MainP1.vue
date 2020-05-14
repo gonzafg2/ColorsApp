@@ -13,7 +13,6 @@
       v-else
       class="colors-tag"
       v-for="col in color"
-      v-clipboard="col.color"
       :key="col.id"
       :style="{ 'background-color': col.color }"
     >
@@ -28,15 +27,17 @@
           }
         }"
       >
-        <!-- <router-link to="/ColorCopied"> -->
-        <div class="colors-tag--year">{{ col.year }}</div>
-        <div class="colors-tag--name-code">
-          <div class="colors-tag--name">{{ col.name }}</div>
-          <div class="colors-tag--code">
-            {{ col.color }}
+        <div v-clipboard="col.color">
+          <!-- <router-link to="/ColorCopied"> -->
+          <div class="colors-tag--year">{{ col.year }}</div>
+          <div class="colors-tag--name-code">
+            <div class="colors-tag--name">{{ col.name }}</div>
+            <div class="colors-tag--code">
+              {{ col.color }}
+            </div>
           </div>
+          <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
         </div>
-        <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
       </router-link>
       <!-- </router-link> -->
     </section>
