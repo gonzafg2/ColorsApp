@@ -34,7 +34,7 @@
     box-shadow: -2px 4px 1px #dddddd;
     cursor: pointer;
     opacity: 1;
-    transition: 300ms opacity;
+    transition: 300ms all;
     & a{
       display: flex;
       justify-content: space-between;
@@ -44,6 +44,7 @@
     }
     &:hover{
       opacity: .75;
+      transform: scale(1.02);
     }
     &:active{
       opacity: 1;
