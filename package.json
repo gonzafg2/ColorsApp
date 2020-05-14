@@ -5,16 +5,19 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.19.2",
     "bootstrap": "^4.5.0",
     "bootstrap-vue": "^2.14.0",
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "intersection-observer": "^0.10.0",
     "regenerator-runtime": "^0.13.5",
     "serve": "^11.3.0",
+    "serve-static": "^1.14.1",
     "v-clipboard": "^2.2.3",
     "vue": "^2.6.11",
     "vue-router": "^3.1.6"
