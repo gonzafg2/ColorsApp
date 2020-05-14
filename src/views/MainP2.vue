@@ -1,5 +1,5 @@
 <template>
-  <main class="colors-grid mx-5 mt-2">
+  <main class="colors-grid mx-md-5 mt-2">
     <header class="colors-grid--title">
       <h1>Colores</h1>
     </header>
