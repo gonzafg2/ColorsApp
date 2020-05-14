@@ -1,0 +1,24 @@
+a.navbar-brand{
+  font-size: $fs-title;
+  line-height: 2;
+  transition: 300ms all;
+  img{
+    width: 15%;
+  }
+  &:hover{
+    opacity: .75;
+  }
+}
+
+.nav-items{
+  font-size: 1.2rem;
+  color: #000000;
+  a.link-about{
+    color: #000000;
+    transition: 300ms all;
+    &:hover{
+      text-decoration: none;
+      opacity: .35;
+    }
+  }
+}

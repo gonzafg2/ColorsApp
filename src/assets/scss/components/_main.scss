@@ -1,0 +1,142 @@
+.colors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 1rem;
+  margin: 10px;
+
+  &--title {
+    text-align: center;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    grid-column: 1 / 4;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 2rem;
+      color: #000000;
+      line-height: 1.25;
+    }
+  }
+
+  .colors-tag {
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 5px 15px;
+    height: 35vh;
+    font-weight: 500;
+    box-shadow: -2px 4px 1px #dddddd;
+    cursor: pointer;
+    opacity: 1;
+    transition: 300ms all;
+
+    & a {
+      width: 100%;
+    }
+    & a > div{
+      display: flex;
+      justify-content: space-between;
+      height: 100%;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    &:hover {
+      opacity: .75;
+      transform: scale(1.02);
+    }
+
+    &:active {
+      opacity: 1;
+    }
+
+    &--year {
+      align-self: start;
+    }
+
+    &--name-code {
+      align-self: center;
+    }
+
+    &--code {
+      font-weight: 700;
+    }
+
+    &--pvalue {
+      align-self: flex-end;
+    }
+  }
+}
+
+.colors-page {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 4;
+  padding: 5px 10px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  font-size: 1.5rem;
+
+  &--site {
+    font-size: 1.45rem;
+    color: #333333;
+  }
+}
+
+@media(max-width: 767px) {
+  .colors-grid {
+    grid-template-columns: 1fr;
+
+    &--title {
+      grid-column: 1 / 2;
+    }
+
+    .colors-tag {
+      height: 20vh;
+      & a {
+        font-size: 1.35rem;
+      }
+    }
+  }
+
+  .colors-page {
+    grid-column: 1 / 2;
+    font-size: 1.15rem;
+
+    &--site {
+      font-size: 1rem;
+      color: #333333;
+      line-height: 1.75;
+    }
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1199px) {
+  .colors-grid {
+    grid-template-columns: repeat(2, 1fr);
+    
+    &--title {
+      grid-column: 1 / 3;
+    }
+    
+    .colors-tag {
+      height: 25vh;
+    }
+  }
+  .colors-page {
+    grid-column: 1 / 3;
+  }
+}
+
+@media(min-width: 1200px){
+  .colors-grid{
+    grid-template-columns: repeat(3, 1fr);
+    }
+}
