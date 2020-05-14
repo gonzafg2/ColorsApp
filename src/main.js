@@ -4,6 +4,7 @@ import "intersection-observer"; // Optional
 
 import Vue from "vue";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
+import Clipboard from "v-clipboard";
 import App from "./App.vue";
 
 import "bootstrap/dist/css/bootstrap.css";
@@ -14,6 +15,8 @@ Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
 Vue.use(BootstrapVueIcons);
+
+Vue.use(Clipboard);
 
 new Vue({
   router,
