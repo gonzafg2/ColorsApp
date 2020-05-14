@@ -17,19 +17,21 @@
       :key="col.id"
       :style="{ 'background-color': col.color }"
     >
-      <div class="colors-tag--year">{{ col.year }}</div>
-      <div class="colors-tag--name-code">
-        <div class="colors-tag--name">{{ col.name }}</div>
-        <div class="colors-tag--code">
-          {{ col.color }}
+      <router-link to="/ColorCopied">
+        <div class="colors-tag--year">{{ col.year }}</div>
+        <div class="colors-tag--name-code">
+          <div class="colors-tag--name">{{ col.name }}</div>
+          <div class="colors-tag--code">
+            {{ col.color }}
+          </div>
         </div>
-      </div>
-      <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
+        <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
+      </router-link>
     </section>
     <section class="colors-page">
-      <router-link to="/MainP1">Anterior</router-link>
+      <router-link to="/Page1">&#8592; Anterior</router-link>
       <div class="colors-page--site">Página 2</div>
-      <router-link to="/MainP2">Siguiente</router-link>
+      <router-link to="/Page2">Siguiente &#8594;</router-link>
     </section>
   </main>
 </template>

@@ -1,0 +1,16 @@
+.colors-tag-copy__copied{
+  grid-column: 1 / 4;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 5px 15px;
+  height: 70vh;
+  font-weight: 500;
+  box-shadow: -2px 4px 1px #dddddd;
+  font-size: 1.5rem;
+  color: #ffffff;
+  
+  .colors-tag--name-code {
+    font-size: 4rem;
+  }
+}
