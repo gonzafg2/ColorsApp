@@ -1,16 +1,6 @@
 <template>
-  <main class="colors-grid mx-5 mt-2">
-    <header class="colors-grid--title">
-      <h1>Colores</h1>
-    </header>
-    <section v-if="errored" style="grid-column: 1 / 4" class="display-4 mt-5">
-      <p>
-        Lo sentimos, no es posible obtener la información en este momento, por
-        favor intente nuevamente mas tarde.
-      </p>
-    </section>
+  <main>
     <section
-      v-else
       class="colors-tag"
       v-for="col in color"
       :key="col.id"
@@ -24,12 +14,6 @@
         </div>
       </div>
       <div class="colors-tag--pvalue">{{ col.pantone_value }}</div>
-    </section>
-
-    <section class="colors-page">
-      <router-link to="/MainP1">Anterior</router-link>
-      <div class="colors-page--site">Página 1</div>
-      <router-link to="/MainP2">Siguiente</router-link>
     </section>
   </main>
 </template>
@@ -54,7 +38,6 @@ export default {
         this.errored = true;
       })
       .finally(() => (this.loading = false));
-  },
-  methods: {}
+  }
 };
 </script>
