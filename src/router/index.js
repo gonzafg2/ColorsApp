@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import MainP1 from "../views/MainP1.vue";
-import MainP2 from "../views/MainP2.vue";
-import Copy from "../views/Copy.vue";
+// import MainP1 from "../views/MainP1.vue";
+// import MainP2 from "../views/MainP2.vue";
+// import Copy from "../views/Copy.vue";
 
 Vue.use(VueRouter);
 
@@ -14,17 +14,21 @@ const routes = [
   {
     path: "/Page1",
     name: "MainP1",
-    component: MainP1
+    component: () => import("../views/MainP1.vue")
+    // component: MainP1
   },
   {
     path: "/Page2",
     name: "MainP2",
-    component: MainP2
+    component: () => import("../views/MainP2.vue")
+    // component: MainP2
   },
   {
-    path: "/ColorCopied",
+    path: "/ColorCopied/:color",
     name: "Copy",
-    component: Copy
+    component: () => import("../views/Copy.vue"),
+    // component: Copy,
+    props: true
   },
   {
     path: "/about",

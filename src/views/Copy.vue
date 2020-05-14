@@ -23,25 +23,19 @@
 </template>
 
 <script>
-// Importo librería de Axios para traer datos de API como promesa.
-import axios from "axios";
-
 export default {
+  name: "Copy",
+  props: {
+    id: {
+      type: String,
+      default: null
+    }
+  },
   data() {
     return {
       color: null,
       errored: false
     };
-  },
-  mounted() {
-    axios
-      .get("https://reqres.in/api/colors?page=1")
-      .then(response => (this.color = response.data.data))
-      .catch(error => {
-        console.log(error);
-        this.errored = true;
-      })
-      .finally(() => (this.loading = false));
   }
 };
 </script>
