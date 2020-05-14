@@ -9,17 +9,17 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    redirect: "color"
+    redirect: "colors"
   },
   {
-    path: "/color",
+    path: "/colors",
     name: "MainP1",
     component: () =>
       import(/* webpackChunkName: "bundle-colors" */ "../views/MainP1.vue")
     // component: MainP1
   },
   {
-    path: "/color",
+    path: "/colors-2",
     name: "MainP2",
     component: () =>
       import(/* webpackChunkName: "bundle-colors" */ "../views/MainP2.vue")
