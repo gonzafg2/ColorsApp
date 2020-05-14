@@ -4,3 +4,10 @@
     line-height: 3;
   }
 }
+
+@media (max-width: 345px) {
+  .footer_colors--copyright {
+    font-size: .75rem;
+    line-height: 3;
+  }
+}

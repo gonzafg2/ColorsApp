@@ -63,6 +63,7 @@
 
     &--name-code {
       align-self: center;
+      padding-left: 2rem;
     }
 
     &--code {
@@ -100,7 +101,7 @@
 
     .colors-tag {
       height: 20vh;
-      & a {
+      & a > div{
         font-size: 1.35rem;
       }
     }
@@ -139,4 +140,37 @@
   .colors-grid{
     grid-template-columns: repeat(3, 1fr);
     }
+}
+
+@media(max-width: 345px) {
+  .colors-grid {
+    grid-template-columns: 1fr;
+
+    &--title {
+      grid-column: 1 / 2;
+      & h1{
+        font-size: 1.75rem;
+      }
+    }
+
+    .colors-tag {
+      height: 20vh;
+
+      & a>div {
+        font-size: 1.15rem;
+      }
+    }
+  }
+
+  .colors-page {
+    grid-column: 1 / 2;
+    font-size: .9rem;
+    line-height: 1.75;
+
+    &--site {
+      font-size: .9rem;
+      color: #333333;
+      line-height: 1.75;
+    }
+  }
 }

@@ -4,6 +4,7 @@ a.navbar-brand{
   transition: 300ms all;
   img{
     width: 15%;
+    margin-left: -3.5rem;
   }
   &:hover{
     opacity: .75;
@@ -20,5 +21,14 @@ a.navbar-brand{
       text-decoration: none;
       opacity: .35;
     }
+  }
+}
+
+@media(max-width: 345px) {
+  a.navbar-brand{
+    font-size: 1.2rem;
+  }
+  .nav-items {
+    font-size: 1rem;
   }
 }
