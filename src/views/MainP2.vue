@@ -13,6 +13,7 @@
       v-else
       class="colors-tag"
       v-for="col in color"
+      v-clipboard="col.color"
       :key="col.id"
       :style="{ 'background-color': col.color }"
     >
