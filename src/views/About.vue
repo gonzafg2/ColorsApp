@@ -8,13 +8,14 @@
       <div class="colors-tag--name-code">
         Esta aplicación fue realizada tomando los datos de la paleta de colores
         obtenidos desde esta API
-        <a href="https://reqres.in/api/colors">https://reqres.in/api/colors</a>. Esto con el objetivo de facilitar la
-        visualización y copiado de los códigos hexadecimales de colores requeridos.
+        <a href="https://reqres.in/api/colors">https://reqres.in/api/colors</a>.
+        Esto con el objetivo de facilitar la visualización y copiado de los
+        códigos hexadecimales de colores requeridos.
       </div>
     </section>
 
     <section class="colors-page">
-      <router-link :to="{ name: 'MainP1' }">>&#8592; Página 1</router-link>
+      <router-link :to="{ name: 'MainP1' }">&#8592; Página 1</router-link>
       <div class="colors-page--site">Sobre esta app</div>
       <router-link :to="{ name: 'MainP2' }">Página 2 &#8594;</router-link>
     </section>
