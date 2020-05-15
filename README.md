@@ -9,7 +9,7 @@ _ó_
 [https://color-app-vue.herokuapp.com/colors](https://color-app-vue.herokuapp.com/colors)
 
 ![](https://raw.githubusercontent.com/gonzafg2/ColorsApp/master/colorsapp.png)
-
+_Al hacer clic en algunos de los colores se ve lo siguiente:_
 ![](https://raw.githubusercontent.com/gonzafg2/ColorsApp/master/colorsapp2.png)
 
 _La paleta de colores es obtenida a través de una API de prueba._
