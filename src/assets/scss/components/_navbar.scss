@@ -23,6 +23,13 @@ a.navbar-brand{
     }
   }
 }
+@media screen and (max-width: 767px) {
+  a.navbar-brand {
+    img {
+      margin-left: -5rem;
+    }
+  }
+}
 
 @media(max-width: 345px) {
   a.navbar-brand{
