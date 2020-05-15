@@ -8,6 +8,10 @@ _Puedes ingresar desde estos links:_
 _ó_ 
 [https://color-app-vue.herokuapp.com/colors](https://color-app-vue.herokuapp.com/colors)
 
+![](https://raw.githubusercontent.com/gonzafg2/ColorsApp/master/colorsapp.png)
+
+![](https://raw.githubusercontent.com/gonzafg2/ColorsApp/master/colorsapp2.png)
+
 _La paleta de colores es obtenida a través de una API de prueba._
 <!-- ``` -->
 [https://reqres.in/api/colors](https://reqres.in/api/colors)
