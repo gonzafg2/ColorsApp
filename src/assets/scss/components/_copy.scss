@@ -14,3 +14,33 @@
     font-size: 4rem;
   }
 }
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .colors-tag-copy__copied {
+    grid-column: 1 / 2;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .colors-tag-copy__copied {
+    grid-column: 1 / 2;
+    height: 65vh;
+    font-size: 1.25rem;
+
+    .colors-tag--name-code {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .colors-tag-copy__copied {
+    grid-column: 1 / 2;
+    height: 50vh;
+
+    .colors-tag--name-code {
+      font-size: 1.5rem;
+    }
+  }
+}
