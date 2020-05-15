@@ -15,6 +15,8 @@
       v-for="col in color"
       :key="col.id"
       :style="{ 'background-color': col.color }"
+      v-b-tooltip.hover
+      title="Haz clic sobre el color para copiarlo al portapapeles."
     >
       <router-link
         :to="{
