@@ -2,6 +2,12 @@
 
 _ColorsApp es una aplicación desarrollada con Vue JS para ayudar a los usuarios en su trabajo diario copiando los códigos hexadecimales de los colores dentro de una paleta determinada._
 
+_Puedes ingresar desde estos links:_
+
+[https://miapp.digital/colors](https://miapp.digital/colors) 
+_ó_ 
+[https://color-app-vue.herokuapp.com/colors](https://color-app-vue.herokuapp.com/colors)
+
 _La paleta de colores es obtenida a través de una API de prueba._
 <!-- ``` -->
 [https://reqres.in/api/colors](https://reqres.in/api/colors)
@@ -117,6 +123,7 @@ _En este proyecto se han utilizado las siguientes tecnologías:_
 * [NodeJS y npm](https://nodejs.org/) - Manejador de dependencias.
 * [Axios](https://github.com/axios/axios) - Utilizado para realizar llamadas a una API de forma sencilla, basado en promesas.
 * [Vue Clipboard](https://www.npmjs.com/package/vue-clipboards) - Usado para realizar el copiado de un elemento al ser clickeado.
+* [Heroku](https://www.heroku.com) - Usado para hacer deploy y como hosting de la aplicación.
 
 <!-- ## Contribuyendo 🖇️
 
