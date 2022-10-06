@@ -50,7 +50,6 @@
 </template>
 
 <script>
-// Importo librería de Axios para traer datos de API como promesa.
 import axios from "axios";
 
 export default {
@@ -58,45 +57,6 @@ export default {
     return {
       color: null,
       errored: false
-      // Pruebo con datos de arreglo propio de forma exitosa.
-      //
-      // colors: [
-      //   {
-      //     id: 1,
-      //     year: "2006",
-      //     name: "Sand dollar",
-      //     code: "#DECDBE",
-      //     pvalue: "13-1106"
-      //   },
-      //   {
-      //     id: 2,
-      //     year: "2006",
-      //     name: "Sand dollar",
-      //     code: "#DECDBE",
-      //     pvalue: "13-1106"
-      //   },
-      //   {
-      //     id: 3,
-      //     year: "2006",
-      //     name: "Sand dollar",
-      //     code: "#DECDBE",
-      //     pvalue: "13-1106"
-      //   },
-      //   {
-      //     id: 4,
-      //     year: "2006",
-      //     name: "Sand dollar",
-      //     code: "#DECDBE",
-      //     pvalue: "13-1106"
-      //   },
-      //   {
-      //     id: 5,
-      //     year: "2006",
-      //     name: "Sand dollar",
-      //     code: "#DECDBE",
-      //     pvalue: "13-1106"
-      //   }
-      // ]
     };
   },
   mounted() {

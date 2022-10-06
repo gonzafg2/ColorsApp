@@ -30,7 +30,6 @@
         }"
       >
         <div v-clipboard="col.color">
-          <!-- <router-link to="/ColorCopied"> -->
           <div class="colors-tag--year">{{ col.year }}</div>
           <div class="colors-tag--name-code">
             <div class="colors-tag--name">{{ col.name }}</div>
@@ -52,7 +51,6 @@
 </template>
 
 <script>
-// Importo librería de Axios para traer datos de API como promesa.
 import axios from "axios";
 
 export default {
@@ -71,7 +69,6 @@ export default {
         this.errored = true;
       })
       .finally(() => (this.loading = false));
-  },
-  methods: {}
+  }
 };
 </script>

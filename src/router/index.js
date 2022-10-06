@@ -1,8 +1,5 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-// import MainP1 from "../views/MainP1.vue";
-// import MainP2 from "../views/MainP2.vue";
-// import Copy from "../views/Copy.vue";
 
 Vue.use(VueRouter);
 
@@ -16,14 +13,12 @@ const routes = [
     name: "MainP1",
     component: () =>
       import(/* webpackChunkName: "bundle-colors" */ "../views/MainP1.vue")
-    // component: MainP1
   },
   {
     path: "/colors-2",
     name: "MainP2",
     component: () =>
       import(/* webpackChunkName: "bundle-colors" */ "../views/MainP2.vue")
-    // component: MainP2
   },
   {
     path: "/color/:name",
@@ -31,7 +26,6 @@ const routes = [
     props: true,
     component: () =>
       import(/* webpackChunkName: "bundle-colors" */ "../views/Copy.vue")
-    // component: Copy,
   },
   {
     path: "/about",
