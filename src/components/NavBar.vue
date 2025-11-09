@@ -19,8 +19,8 @@ export default {
   name: "NavBar",
   data() {
     return {
-      ColorsApp: "/"
+      ColorsApp: "/",
     };
-  }
+  },
 };
 </script>

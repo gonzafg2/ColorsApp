@@ -25,8 +25,8 @@
             name: col.name,
             year: col.year,
             color: col.color,
-            pvalue: col.pantone_value
-          }
+            pvalue: col.pantone_value,
+          },
         }"
       >
         <div v-clipboard="col.color">
@@ -56,18 +56,18 @@ export default {
   data() {
     return {
       color: null,
-      errored: false
+      errored: false,
     };
   },
   mounted() {
     axios
       .get("https://reqres.in/api/colors?page=2")
-      .then(response => (this.color = response.data.data))
-      .catch(error => {
+      .then((response) => (this.color = response.data.data))
+      .catch((error) => {
         console.log(error);
         this.errored = true;
       })
       .finally(() => (this.loading = false));
-  }
+  },
 };
 </script>
