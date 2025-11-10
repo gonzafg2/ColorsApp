@@ -8,9 +8,7 @@
       :style="{ 'background-color': $route.params.color }"
     >
       <div class="colors-tag--year">{{ $route.params.year }}</div>
-      <div class="colors-tag--name-code">
-        ¡Copiado!
-      </div>
+      <div class="colors-tag--name-code">¡Copiado!</div>
       <div class="colors-tag--pvalue">{{ $route.params.pvalue }}</div>
     </section>
 
@@ -30,13 +28,13 @@ export default {
   props: {
     id: {
       type: Number,
-      default: 0
-    }
+      default: 0,
+    },
   },
   data() {
     return {
-      col: []
+      col: [],
     };
-  }
+  },
 };
 </script>
